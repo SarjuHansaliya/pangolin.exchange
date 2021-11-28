@@ -1,0 +1,41 @@
+
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+footer img.icon {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+}
+.after\:hash::after {
+  content: "#";
+}
+.texture-black-felt {
+  background-image: url("assets/textures/black-felt.png");
+}
+
+.texture-cartographer {
+  background-image: url("assets/textures/cartographer.png");
+}
+
+.texture-concrete-wall-2 {
+  background-image: url("assets/textures/concrete-wall-2.png");
+}
+
+.texture-foggy-birds {
+  background-image: url("assets/textures/foggy-birds.png");
+}
+
+.texture-food {
+  background-image: url("assets/textures/food.png");
+}
+
+.texture-purty-wood {
+  background-image: url("assets/textures/purty-wood.png");
+}
+
+:global([hidden]) {
+  display: none !important;
+}
