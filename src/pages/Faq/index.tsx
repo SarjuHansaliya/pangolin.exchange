@@ -1,6 +1,6 @@
 import React from 'react';
+import { Items } from 'pages/Faq/Items';
 import { FAQ_ITEMS_DATA } from 'pages/Faq/data';
-import { Items } from 'pages/Faq/items';
 
 export const Faq = () => {
   return (

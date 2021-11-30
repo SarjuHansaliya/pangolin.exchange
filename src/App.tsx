@@ -5,14 +5,13 @@ const routing = (
   <Router>
     {routes.map((route, index) => {
       const RouteComponent = route.component;
-      const Layout = route.layout;
+      const Layout: any = route.layout;
       return (
         <Routes key={index}>
           <Route
-            // exact={route.exact}
             path={route.path}
             element={
-              <Layout>
+              <Layout title= {route.title}>
                 <RouteComponent />
               </Layout>
             }

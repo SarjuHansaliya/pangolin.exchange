@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { DATA_INFO, DATA_TAB } from 'pages/HomePage/data';
+import { Tab } from 'pages/CommonTab';
+import { DATA_INFO } from 'pages/HomePage/data';
 import { getTotalStats } from 'utils';
 
 type StateParams = {
@@ -65,21 +66,8 @@ export const PangolinInfo: React.FC = () => {
           –powered by Avalanche. Pangolin brings you the best trading
           opportunities to find and maximize your yield.
         </p>
-
         <div className="flex flex-wrap space-y-4 text-center sm:space-y-0 sm:space-x-4">
-          {DATA_TAB.map((items, index) => {
-            return (
-              <a
-                key={index}
-                className={items.class}
-                rel="noreferrer"
-                href={items.href}
-                target="_blank"
-              >
-                {items.name}
-              </a>
-            );
-          })}
+          <Tab />
         </div>
       </div>
     </>
